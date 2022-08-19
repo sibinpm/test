@@ -30,6 +30,5 @@ jobs:
           # files will copy to under remote_path
           
           remote_path: /home/ubuntu/git_repo
-          delete_remote_files: true
           # sftp args
           args: '-o ConnectTimeout=5'
