@@ -25,9 +25,9 @@ jobs:
           username: root
           server: 206.189.135.140
           port: 2200 # default is 22
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: ./* # default is ./*
           # files will copy to under remote_path
           remote_path: /var/lib
           # sftp args
-          args: '-o ConnectTimeout=5'
+          sftp_only: true
+          password: odoo
