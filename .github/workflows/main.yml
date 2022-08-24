@@ -22,12 +22,12 @@ jobs:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          username: ubuntu
-          server: 13.126.183.211
-          port: 22 # default is 22
+          username: root
+          server: 206.189.135.140
+          port: 2200 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: ./* # default is ./*
           # files will copy to under remote_path
-          remote_path: /home/ubuntu/git_repo
+          remote_path: /var/lib
           # sftp args
           args: '-o ConnectTimeout=5'
